@@ -1,0 +1,325 @@
+doctype html
+head  
+  meta(charset='UTF-8')
+  meta(name='viewport' contet='width=device-width, initial-scale=1')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+  link(rel='stylesheet' href='./index.css')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Raleway:wght@400;700&display=swap' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/7a339e5406.js' crossorigin='anonymous')
+  link(rel="icon" type="image/png" href="assets/Logo.png")
+  title AXIT
+header.header
+  .container.header__container
+    a(href='#Main')
+      img.logo.logo--small(src='assets/Logo.png' alt='AXIT Logo')
+    nav.navigation.header__navigation
+      ul.navigation__list
+        li.navigation__item
+          a.navigation__link(href='#') Features
+        li.navigation__item
+          a.navigation__link(href='#') About
+        li.navigation__item
+          a.navigation__link(href='#') Pricing 
+        li.navigation__item
+          a.navigation__link(href='#') Reviews 
+        li.navigation__item
+          a.navigation__link(href='#') Contact 
+header.header.header-width--768
+  .container.header__container
+    a(href='#Main')
+      img.logo.logo--small(src='assets/Logo.png' alt='AXIT Logo')
+    .checkbox-menu
+      input#check-menu.check-menu(type='checkbox')
+      label.checkbox-menu__label(for='check-menu') Menu
+      .burger-line.burger-line--01
+      .burger-line.burger-line--02
+      .burger-line.burger-line--03
+      .burger-line.burger-line--04
+      nav.navigation.header__navigation.header__navigation--768
+        a.navigation__link(href='#') Features
+        a.navigation__link(href='#') About
+        a.navigation__link(href='#') Pricing 
+        a.navigation__link(href='#') Reviews 
+        a.navigation__link(href='#') Contact 
+main
+  section.banner
+    .container.banner__container
+      .banner__inner
+        a(href='#Main')
+          img.logo.logo--big(src='assets/Logo.png' alt='AXIT Logo')
+        h1.banner__title MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+        p.banner__subtitle
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          | euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+          | accumsan et viverra justo commodo.
+        a.download__link(href='#' download='') Download
+      form.form-registration.banner__form-registration(name='registration' action='#' method='post')
+        p.form-registration__title
+          | Try Your 
+          span FREE 
+          | Trial Today
+        .input-container
+          input.form-registration__input(type='text' name='name' placeholder='Name')
+          input.form-registration__input(type='email' name='email' placeholder='Email')
+          input.form-registration__input(type='password' name='password' placeholder='Password')
+        button.form-registration__btn(type='submit') Get Started
+  section.socials.container
+    .socials__inner
+      h3.socials__title Social Media
+      p(clss='socials__subtitle')
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        | Aenean euismod bibendum laoreet.
+    .socials__icons.social-icons
+      a.social-icons__link(href='#')
+        i.fab.fa-facebook-f
+      a.social-icons__link(href='#')
+        i.fab.fa-twitter
+      a.social-icons__link(href='#')
+        i.fab.fa-google-plus-g
+      a.social-icons__link(href='#')
+        i.fab.fa-pinterest-p
+      a.social-icons__link(href='#')
+        i.fab.fa-instagram-square
+      a.social-icons__link(href='#')
+        i.fab.fa-stumbleupon
+      a.social-icons__link(href='#')
+        i.fab.fa-forumbee
+  section.tabs.section--gray-bg
+    .container
+      input#tab-1.tab__btn(type='radio' name='tab-group' checked='')
+      input#tab-2.tab__btn(type='radio' name='tab-group')
+      input#tab-3.tab__btn(type='radio' name='tab-group')
+      .tabs__wrap
+        .tabs__labels
+          label.tab__label.label-1(for='tab-1') Tab 1
+          label.tab__label.label-2(for='tab-2') Tab 2
+          label.tab__label.label-3(for='tab-3') Tab 3
+        .tabs__content.tab-content
+          #tab--01.tab-content__inner
+            h3.tab-content__title Tabs with soft transitioning effect.
+            p.tab-content__subtitle
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+              | bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+              | justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+              | penatibus et magnis dis parturient montes.
+              br
+              br
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+              |                             bibendum laoreet.
+            a.tab__link.btn(href='#' download='') Download
+          #tab--02.tab-content__inner
+            h3.tab-content__title Tabs with soft transitioning effect.
+            p.tab-content__subtitle
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+              | bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+              | justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+              | penatibus et magnis dis parturient montes.
+              br
+              br
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+              |                             bibendum laoreet.
+              br
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+              |                             bibendum laoreet.
+            a.tab__link.btn(href='#' download='') Download
+          #tab--03.tab-content__inner
+            h3.tab-content__title Tabs with soft transitioning effect.
+            p.tab-content__subtitle
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+              | bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+              | justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+              | penatibus et magnis dis parturient montes.
+              br
+              br
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+              |                             bibendum laoreet.
+              br
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+              |                             bibendum laoreet.
+              br
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+              |                             bibendum laoreet.
+            a.tab__link.btn(href='#' download='') Download
+  section.standart-section.standart-section-white
+    .container
+      .standart-section--type1
+        h3.standart-section__title Sub list section
+        p.standart-section__description
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          | euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+          | accumsan et viverra justo commodo.
+        ul.standart-section__list
+          li.standart-section__item.section-item.section-item--01
+            h4.section-item__title Title
+            p.section-item__description
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Aenean euismod bibendum laoreet.
+          li.standart-section__item.section-item.section-item--02
+            h4.section-item__title Title
+            p.section-item__description
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Aenean euismod bibendum laoreet. Proin gravida dolor
+              | sit amet lacus accumsan et viverra justo commodo.
+  section.standart-section.standart-section-gray
+    .container
+      .standart-section--type2
+        h3.standart-section__title Standard Picture Section
+        p.standart-section__description
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+          | euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
+          | et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
+          | natoque penatibus et magnis dis parturient montes.
+          br
+          br
+          |  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+          |                         bibendum laoreet.
+  section.main-section
+    .container.features
+      h2.main-section__title WHY THIS IS AWESOME
+      p.main-section__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      ul.features__list
+        li.features__item.features-item
+          h3.features-item__title Thoughtful Design
+          p.features-item__description
+            | Lorem ipsum dolor sit amet, consectetur adipiscing
+            | elit. Aenean euismod bibendum laoreet. Proin gravida
+            | dolor sit amet lacus accumsan et viverra.
+        li.features__item.features-item
+          h3.features-item__title Well Crafted
+          p.features-item__description
+            | Lorem ipsum dolor sit amet, consectetur adipiscing
+            | elit. Aenean euismod bibendum laoreet. Proin gravida
+            | dolor sit amet lacus accumsan et viverra.
+        li.features__item.features-item
+          h3.features-item__title Easy to Customize
+          p.features-item__description
+            | Lorem ipsum dolor sit amet, consectetur adipiscing
+            | elit. Aenean euismod bibendum laoreet. Proin gravida
+            | dolor sit amet lacus accumsan et viverra.
+  section.main-section.section--gray-bg
+    .container
+      h2.main-section__title PRICING OPTIONS
+      p.main-section__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .pricing
+        .prising__option.option.option--basic
+          h3.option__title Basic
+          p.option__price
+            span $
+            | 0
+          p.option__timing Free for Life
+          label.option__details(for='details--1') Details
+          input#details--1.option__input.option__input--1(type='checkbox' name='deatils')
+          ul.option__features.option-features.option-features--1
+            li.option-features__item 1 gb of space
+            li.option-features__item 10 gb of bandwidth
+            li.option-features__item 3 websites
+            li.option-features__item Basic Customization
+            li.option-features__item wordpress integration
+            li.option-features__item email support
+        .prising__option.option.option--professional
+          h3.option__title Professional
+          p.option__price
+            span $
+            | 19
+          p.option__timing Monthly Payment
+          p.option__description OUR MOST POPULAR
+          label.option__details(for='details--2') Details
+          input#details--2.option__input.option__input--2(type='checkbox' name='deatils')
+          ul.option__features.option-features.option-features--2
+            li.option-features__item 5 gb of space
+            li.option-features__item 50 gb of bandwidth
+            li.option-features__item 12 websites
+            li.option-features__item Advanced Customization
+            li.option-features__item wordpress integration
+            li.option-features__item email support
+        .prising__option.option.option--enterprise
+          h3.option__title Enterprise
+          p.option__price
+            span $
+            | 70
+          p.option__timing Monthly Payment
+          label.option__details(for='details--3') Details
+          input#details--3.option__input.option__input--3(type='checkbox' name='deatils')
+          ul.option__features.option-features.option-features--3
+            li.option-features__item Unlimited space
+            li.option-features__item unlimited bandwidth
+            li.option-features__item 100 websites
+            li.option-features__item Advanced Customization
+            li.option-features__item wordpress integration
+            li.option-features__item 24/7 customer support
+  section.main-section
+    .container
+      h2.main-section__title WHAT OUR CUSTOMERS ARE SAYING
+      p.main-section__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      ul.reviews
+        li.reviews__item.review-item
+          p.review-item__comment
+            | Lorem ipsum dolor sit amet,
+            | consectetur adipisicing elit. Doloribus
+            | accusamus expedita repellat similique
+            | odio aspernatur ex, architecto eaque
+            | quo suscipit.
+          .review-item__author.author
+            p.author__name John S.
+            p.author__position Freelancer
+        li.reviews__item.review-item
+          p.review-item__comment
+            | Lorem ipsum dolor sit amet,
+            | consectetur adipisicing elit. Doloribus
+            | accusamus expedita repellat similique
+            | odio aspernatur ex, architecto eaque
+            | quo suscipit.
+          .review-item__author.author
+            p.author__name John M.
+            p.author__position Photographer
+        li.reviews__item.review-item
+          p.review-item__comment
+            | Lorem ipsum dolor sit amet,
+            | consectetur adipisicing elit. Doloribus
+            | accusamus expedita repellat similique
+            | odio aspernatur ex, architecto eaque
+            | quo suscipit.
+          .review-item__author.author
+            p.author__name John L.
+            p.author__position Manager
+  section.main-section.design-section
+    .container
+      h2.main-section__title STYLISH AXURE DESIGN
+      p.main-section__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      a.download__link(href='#' download='') Download
+  section.main-section
+    .container
+      h2.main-section__title CONTACT US
+      p.main-section__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      form.feedback-form(action='#' method='get')
+        .feedback-form__wrap.contact-form
+          .contact-form__main.contact-details
+            input#contact-name.contact-details__name(type='text' name='name' placeholder='Name' required='')
+            input#contact-email.contact-details__email(type='email' name='email' placeholder='Email' required='')
+            select.contact-details__subject(name='subject' title='Subject')
+              option(value='' selected='' disabled='') Subject
+              option(value='subject-1') Subject 1
+              option(value='subject-2') Subject 2
+              option(value='subject-3') Subject 3
+              option(value='other') Other
+          .contact-form__message(required='')
+            textarea.contact-details__message(placeholder='Message')
+        button.btn.feedback-form-btn(type='submit') Sent Message
+footer.page-footer
+  .container
+    .socials__icons.social-icons.social-icons--footer
+      a.social-icons__link(href='#')
+        i.fab.fa-facebook-f
+      a.social-icons__link(href='#')
+        i.fab.fa-twitter
+      a.social-icons__link(href='#')
+        i.fab.fa-google-plus-g
+      a.social-icons__link(href='#')
+        i.fab.fa-pinterest-p
+      a.social-icons__link(href='#')
+        i.fab.fa-instagram-square
+      a.social-icons__link(href='#')
+        i.fab.fa-stumbleupon
+      a.social-icons__link(href='#')
+        i.fab.fa-forumbee
+    p.footer__information &copy; 2015 Axure Themes

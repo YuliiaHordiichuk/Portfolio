@@ -1,0 +1,227 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  html(lang="en")
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+  link(rel='stylesheet' href='./index.css')
+  link(href='https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Montserrat:wght@700&display=swap' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/7a339e5406.js' crossorigin='anonymous')
+  title DECO BLOG
+header.main-header.gray-bg
+  .container
+    nav.main-header__navigation.nav
+      .nav__menu-wrap
+        .nav__menu.menu
+          input#burger-menu.menu__input(type='checkbox')
+          label.menu_label.burger-menu(for='burger-menu')
+            span.burger-menu__line.burger-menu__line_01 
+            span.burger-menu__line.burger-menu__line_02
+            span.burger-menu__line.burger-menu__line_03
+            span.burger-menu__line.burger-menu__line_04
+          ul.menu__items
+            li.menu__item
+              a.menu__link(href='') Menu item 1
+            li.menu__item
+              a.menu__link(href='') Menu item 2
+            li.menu__item
+              a.menu__link(href='') Menu item 3
+            li.menu__item
+              a.menu__link(href='') Menu item 4
+            li.menu__item
+              .socials
+                a.socials__link(href='')
+                  i.fas.fa-wifi
+                a.socials__link(href='')
+                  i.fab.fa-facebook-f
+                a.socials__link(href='')
+                  i.fab.fa-twitter
+                a.socials__link(href='')
+                  i.fab.fa-tumblr
+      a.nav__logo.logo(href='')
+        img.nav__logo.logo(src='./assets/logo.png' alt='Deco Blog logo')
+        span.logo__part BLOG
+      .nav__subsection.nav-subsection
+        .nav-subsection__socials.socials
+          a.socials__link(href='')
+            i.fas.fa-wifi
+          a.socials__link(href='')
+            i.fab.fa-facebook-f
+          a.socials__link(href='')
+            i.fab.fa-twitter
+          a.socials__link(href='')
+            i.fab.fa-tumblr
+        button.nav-subsection__btn.search-btn
+          img.search-btn__icon(src='./assets/search.png' alt='search button')
+main
+  section.article
+    .container
+      article.articles
+        .articles__inner.article_01
+          p.articles__suptitle Latest News
+          a.article__title(href='') BodyBuilding best for you health
+        .articles__toogle.article-toogle_01
+          input#article-toogle-01.article-toogle__input(type='radio' name='article-toogle' checked='')
+          label.article-toogle__label(for='article-toogle-01')
+          input#article-toogle-02.article-toogle__input(type='radio' name='article-toogle')
+          label.article-toogle__label(for='article-toogle-02')
+          input#article-toogle-03.article-toogle__input(type='radio' name='article-toogle')
+          label.article-toogle__label(for='article-toogle-03')
+        .articles__toogle.article-toogle_02
+          button.article-toogle__next.next-article
+            img.next-article__arrow(src='./assets/Down.png' alt='Next article')
+          p.article-toogle__text Featured Article
+          button.article-toogle__previous.previous-article
+            img.previous-article__arrow(src='./assets/Top.png' alt='Previous article')
+  section.signup
+    .container
+      .signup__container
+        p.signup__title Signup to Newsletter
+        form.signup__form
+          input.signup__input(type='text' name='signup' placeholder='YOUR NAME')
+          input.signup__input(type='email' name='signup' placeholder='YOUR EMAIL ADRESS')
+          button.signup__button Subscribe Now
+  section.blog
+    .container
+      .blog__template
+        .blog__post.post.post_big
+          img.post__image(src='http://via.placeholder.com/1500x512' alt='Post image')
+          .blog__icon.blog__icon_photo
+          h4.post__suptitle Travelling
+          h3.post__title Standard Image Post 
+          p.post__date January 25, 2016
+          a.post__btn(href='') Read More
+          .post__footer
+            p.post__comments 06 Comment
+            .post__socials.post-socials
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-1.png' alt="Social 1 link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-fb.png'  alt="Facebook link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-twitter.png'  alt="Twitter link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-pint.png'  alt="Pinterest link")
+        .blog__post.post
+          .blog__icon.blog__icon_text
+          h4.post__suptitle Travelling
+          h3.post__title Travel besT Adventure
+          p.post__date January 25, 2016
+          p.post__text
+            | Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+          a.post__btn(href='') Read More
+          .post__footer
+            p.post__comments No Comment
+            .post__socials.post-socials
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-1.png' alt="Social 1 link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-fb.png'  alt="Facebook link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-twitter.png'  alt="Twitter link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-pint.png'  alt="Pinterest link")
+        .blog__post.post
+          img.post__image(alt='Post image' src='http://via.placeholder.com/720x512')
+          .blog__icon.blog__icon_photo
+          h4.post__suptitle Travelling
+          h3.post__title Standard Image Post 
+          p.post__date January 25, 2016
+          a.post__btn(href='') Read More
+          .post__footer
+            p.post__comments 06 Comment
+            .post__socials.post-socials
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-1.png' alt="Social 1 link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-fb.png'  alt="Facebook link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-twitter.png'  alt="Twitter link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-pint.png'  alt="Pinterest link")
+        .blog__post.post
+          .blog__icon.blog__icon_photo
+          img.post__image.post__image_cover(alt='Post image' src='http://via.placeholder.com/720x1100')
+        .blog__post.post
+          .blog__icon.blog__icon_text
+          h4.post__suptitle Fashion
+          h3.post__title Simple post style 
+          p.post__date January 02, 2016
+          p.post__text
+            | Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have great work.
+          a.post__btn(href='') Read More
+          .post__footer
+            p.post__comments No Comment
+            .post__socials.post-socials
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-1.png' alt="Social 1 link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-fb.png'  alt="Facebook link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-twitter.png'  alt="Twitter link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-pint.png'  alt="Pinterest link")
+        .blog__post.post.post_dark
+          .blog__icon.blog__icon_top.blog__icon_quote
+          p.post__text_light
+            | As per Lorm ipsum dolor sitamet,
+            | consectetur adipisicing elits, sed do Now eiusmod tempor havei ut labores et dolore magna aliqusa. Ut wenim ad minim veniam, quis
+            | its a snostrud now is the ullamco
+            | aliquip ex ea commodo.
+          p.post__author Nathalia Alexy
+        .blog__post.post
+          .post__images.gallery
+            img.gallery__image(alt='Post image' src='http://via.placeholder.com/360x250')
+            img.gallery__image(alt='Post image' src='http://via.placeholder.com/360x250')
+            img.gallery__image(alt='Post image' src='http://via.placeholder.com/360x250')
+            img.gallery__image(alt='Post image' src='http://via.placeholder.com/360x250')
+          .blog__icon.blog__icon_photo
+          h4.post__suptitle Adventures
+          h3.post__title awesome Gallery Post
+          p.post__date January 19, 2016
+          a.post__btn(href='') Read More
+          .post__footer
+            p.post__comments No Comment
+            .post__socials.post-socials
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-1.png' alt="Social 1 link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-fb.png'  alt="Facebook link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-twitter.png'  alt="Twitter link")
+              a.post-socials__link(href='')
+                img.post-socials__icon(src='./assets/post-socials-pint.png'  alt="Pinterest link")
+footer.footer.gray-bg
+  .container
+    .footer__subsections
+      .footer__subsection.subsection.subsection_01
+        h3.subsection__title About Blog
+        p.subsection__text
+          | Lorem ipsum dolor sit amet, conser adipisicing  esse cillum dolore nulla pariatur.
+      .footer__subsection.subsection.subsection_02
+        h3.subsection__title latest tweets
+        p.subsection__text.subsection__text_icon @Twitter@magicalrebekah
+        p.subsection__text.subsection__text_indents Developer Advocate @heyval isaiyou knows the very well is about things.
+        p.subsection__text.subsection__text_icon @Twitter@magicalrebekah
+        p.subsection__text.subsection__text_padding Developer Advocate hav a great work this knows the very well is about things.
+      .footer__subsection.subsection.subsection_03
+        h3.subsection__title Follow me instagram
+        .subsection__images
+          img.subsection__image(src='http://via.placeholder.com/119x98' alt='Instagtam image')
+          img.subsection__image(src='http://via.placeholder.com/119x98' alt='Instagtam image')
+          img.subsection__image(src='http://via.placeholder.com/119x98' alt='Instagtam image')
+          img.subsection__image(src='http://via.placeholder.com/119x98' alt='Instagtam image')
+          img.subsection__image(src='http://via.placeholder.com/119x98' alt='Instagtam image')
+          img.subsection__image(src='http://via.placeholder.com/119x98' alt='Instagtam image')
+      .footer__subsection.subsection.subsection_04
+        h3.subsection__title latest comment
+        p.subsection__text.subsection__text_margin From Alex:
+        p.subsection__text.subsection__text_border  Developer Advocate @heyval isaiyou know the very well is talking about things.
+        p.subsection__text.subsection__text_margin From Jhon Doe:
+        p.subsection__text Developer Advocate @heyval isaiyou know the very well is talking about things.
+  .footer__copyright.copyright
+    .container
+      .copyright__wrap
+        p.copyright__text @2015 copyright. All right reserved by awesome theme
+        a.copyright__terms(href='') terms policy
+        a.copyright__disclaimer(href='') disclaimer
