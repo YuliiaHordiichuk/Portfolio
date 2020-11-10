@@ -1,14 +1,30 @@
 <!DOCTYPE html>
+include ./mixin/header
+include ./mixin/intro
+include ./mixin/info
+include ./mixin/projects
+include ./mixin/footer
+
+
+
+
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
         link(rel="stylesheet", href="index.css")
+        link(type="image/png" rel="icon" href="assets/fav.png")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous")
+        title Portfolio 
     body 
-        h1 This is my portfolio
-        p Pages: 
-        ul
-            li
-                a(href="./projects/axit/index.html" target="_blank") Axit
+        +header   
+        main
+            +intro     
+            +info
+            +projects
+        +footer
+
+    
+                

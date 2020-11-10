@@ -65,17 +65,23 @@ gulp.task('deco_assets', () => {
         .pipe(gulp.dest('./build/projects/deco/assets')); 
 });
 
-gulp.task('default', function () {
+gulp.task('watch', function() {
     gulp.watch('./src/scss/*.scss', gulp.series('potfolio_scss'));
-    gulp.watch(['./projects/pages/*.pug', './projects/mixin/*.pug'], gulp.series('portfolio_pug'));
+    gulp.watch('./src/pages/**/*.pug', gulp.series('portfolio_pug'));
     gulp.watch('./src/assets/*', gulp.series('portfolio_assets'));
 
     gulp.watch('./projects/axit/scss/*.scss', gulp.series('axit_scss'));
-    gulp.watch(['./projects/axit/pages/*.pug', './projects/axit/mixin/*.pug'], gulp.series('axit_pug'));
+    gulp.watch('./projects/axit/pages/**/*.pug', gulp.series('axit_pug'));
     gulp.watch('./projects/axit/assets/*', gulp.series('axit_assets'));
 
     gulp.watch('./projects/deco/scss/*.scss', gulp.series('deco_scss'));
-    gulp.watch(['./projects/deco/pages/*.pug', './projects/deco/mixin/*.pug'], gulp.series('deco_pug'));
+    gulp.watch('./projects/deco/pages/**/*.pug', gulp.series('deco_pug'));
     gulp.watch('./projects/deco/assets/*', gulp.series('deco_assets'));
-
 });
+
+gulp.task('default', gulp.series(
+    'potfolio_scss', 'portfolio_pug', 'portfolio_assets',
+    'axit_scss', 'axit_pug', 'axit_assets',
+    'deco_scss', 'deco_pug', 'deco_assets',
+    'watch')
+);
