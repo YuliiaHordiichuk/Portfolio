@@ -1,53 +1,46 @@
 mixin info
     section.info.container
-        .info__education
-            p.info__title Education
-            p.info__wrap
-                span.info__date 2015 - 2019 
-                span.info__suptext Bachelor's degree 
-            p.info__text  National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
-            p.info__subtext Faculty of Management and Marketing, Management of Foreign Economic Activity
-
+        
         .info__courses
             p.info__title Courses
             ul.info__list
                 li.info__item 
-                    span.info__date 2020 
+                    i.fas.fa-code.info__icon
                     span.info__name HTML & CSS
                     span.info__punkt —
                     a.info__link(href='https://htmlacademy.ru/study' target="_blank") HTML Academy
                 li.info__item 
-                    span.info__date 2020 
+                    i.fas.fa-code.info__icon
                     span.info__name Responsive Web Design Fundamentals
                     span.info__punkt —
                     a.info__link(href='https://classroom.udacity.com/courses/ud893' target="_blank") UDACITY
                 li.info__item 
-                    span.info__date 2020 
+                    i.fas.fa-code.info__icon
                     span.info__name Version Control with Git
                     span.info__punkt —
                     a.info__link(href='https://classroom.udacity.com/courses/ud123' target="_blank") UDACITY
-                li.info__item
-                    span.info__date.info__date 2020 
+                li.info__item 
+                    i.fas.fa-code.info__icon
                     span.info__name JavaScript Basics
                     span.info__punkt —
                     a.info__link(href='https://classroom.udacity.com/courses/ud803' target="_blank") UDACITY
-                li.info__item
-                    span.info__date.info__date 2020 
+                li.info__item 
+                    i.fas.fa-code.info__icon
                     span.info__name Learn JavaScript
                     span.info__punkt —
                     a.info__link(href='https://www.codecademy.com/learn/introduction-to-javascript' target="_blank") Codecademy
                 li.info__item
-                    span.info__date.info__date 2020 
+                    i.fas.fa-code.info__icon
                     span.info__name JavaScript Algorithms
                     span.info__punkt —
                     a.info__link(href='https://www.freecodecamp.org/learn' target="_blank") Freecodecamp
                 li.info__item
-                    span.info__date.info__date 2020 
+                    i.fas.fa-code.info__icon
                     span.info__name JavaScript and the DOM
                     span.info__punkt —
                     a.info__link(href='https://classroom.udacity.com/courses/ud117' target="_blank") UDACITY
                 li.info__item
-                    span.info__date.info__date 2020 
+                    i.fas.fa-code.info__icon
                     span.info__name Object-Oriented JavaScript
                     span.info__punkt —
                     a.info__link(href='https://classroom.udacity.com/courses/ud015' target="_blank") UDACITY
@@ -70,6 +63,14 @@ mixin info
                 li.info__item
                     i.fas.fa-code.info__icon 
                     |Figma, Avocode
+        
+        .info__education
+            p.info__title Education
+            p.info__wrap
+                span.info__date 2015 - 2019 
+                span.info__suptext Bachelor's degree 
+            p.info__text  National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
+            p.info__subtext Faculty of Management and Marketing, Management of Foreign Economic Activity
 
         .info__lang
             p.info__title Languages
@@ -86,7 +87,8 @@ mixin info
 
         .info__experience
             p.info__title Experience
-            p.info__subtitle 6 months
+            <br>
+            span.info__date.info__date 03.2020 - 12.2020
             p.info__text I have done a few commercial projects (website templates) for themeforest. There are also projects, which were made for educational purposes only and you can check them out in my portfolio. 
             
         
